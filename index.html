@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>开云 · 站点随记</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', sans-serif;
+            background: linear-gradient(145deg, #fbe9d2 0%, #f5d5b5 50%, #ecd1aa 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1rem;
+            line-height: 1.7;
+            color: #3c2e26;
+        }
+
+        .card {
+            max-width: 820px;
+            width: 100%;
+            background: #fffcf8;
+            border-radius: 40px;
+            padding: 2.8rem 2.5rem;
+            box-shadow: 0 20px 40px -12px rgba(130, 70, 30, 0.18);
+            transition: box-shadow 0.2s ease;
+            backdrop-filter: blur(2px);
+        }
+
+        @media (max-width: 540px) {
+            .card {
+                padding: 1.8rem 1.2rem;
+                border-radius: 28px;
+            }
+        }
+
+        .hero-tag {
+            display: inline-block;
+            background: #e2c2a3;
+            color: #3e2e1f;
+            font-size: 0.75rem;
+            font-weight: 500;
+            letter-spacing: 0.6px;
+            padding: 0.2rem 1.2rem;
+            border-radius: 100px;
+            margin-bottom: 1.8rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: #30221a;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+
+        .sub {
+            font-size: 1.05rem;
+            color: #6a5443;
+            border-left: 4px solid #dbb692;
+            padding-left: 1rem;
+            margin: 0.6rem 0 1.8rem 0;
+            font-weight: 380;
+        }
+
+        p {
+            margin-bottom: 1.4rem;
+            font-size: 1.02rem;
+        }
+
+        p.lead {
+            font-size: 1.12rem;
+            color: #3b2b20;
+        }
+
+        .highlight-box {
+            background: #f6ede3;
+            border-radius: 24px;
+            padding: 1.5rem 1.8rem;
+            margin: 1.8rem 0;
+            border-left: 5px solid #b78f70;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0.4rem;
+        }
+
+        .highlight-box .quote {
+            font-style: normal;
+            font-weight: 450;
+            color: #2f231b;
+            display: block;
+            font-size: 1rem;
+        }
+
+        .faq-mini {
+            margin: 2rem 0 1.2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .faq-item {
+            background: #faf3ec;
+            border-radius: 20px;
+            padding: 0.9rem 1.5rem;
+            transition: background 0.15s;
+        }
+
+        .faq-item strong {
+            display: block;
+            font-weight: 550;
+            color: #3b2a1d;
+            margin-bottom: 0.25rem;
+            font-size: 1rem;
+        }
+
+        .faq-item span {
+            color: #5e4a3a;
+            font-size: 0.96rem;
+        }
+
+        .button-link {
+            display: inline-block;
+            background: #dbb692;
+            color: #231a13;
+            padding: 0.6rem 1.8rem;
+            border-radius: 100px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: background 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 8px rgba(90, 60, 35, 0.08);
+            font-size: 0.98rem;
+        }
+
+        .button-link:hover {
+            background: #cba37e;
+            box-shadow: 0 8px 14px -6px rgba(110, 70, 35, 0.2);
+        }
+
+        .inline-link {
+            color: #845e3f;
+            font-weight: 500;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.15s, color 0.15s;
+        }
+
+        .inline-link:hover {
+            border-bottom-color: #b78f70;
+            color: #4a3222;
+        }
+
+        .footer-note {
+            margin-top: 2.4rem;
+            font-size: 0.9rem;
+            color: #7c6959;
+            border-top: 1px solid #e6d5c3;
+            padding-top: 1.6rem;
+            text-align: left;
+        }
+
+        .footer-note a {
+            color: #624d3a;
+            text-decoration: none;
+            border-bottom: 1px dotted #b3927a;
+        }
+
+        .footer-note a:hover {
+            border-bottom-style: solid;
+            color: #3d2c1d;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #e6d2be;
+            margin: 1.6rem 0;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="hero-tag">📬 日常记录 · 站点简介</div>
+        <h1>一处角落，慢慢聊</h1>
+        <div class="sub">关于信息聚合与可信浏览的一点整理</div>
+
+        <p class="lead">
+            前阵子朋友问起，平时怎么快速找到靠谱的运动资讯和赛事动态。我习惯把常用站点收在书签里，其中用的比较勤的一个，就是<strong>开云</strong>。不说多花哨，但胜在内容更新稳，页面也干净，不会有乱跳的弹窗。
+        </p>
+
+        <p>
+            其实最早注意到<a href="https://www.yun-kaisports.com.cn" class="inline-link">开云</a>，是听一位做体育自媒体的作者提了一嘴。他说这个站信息归类很细，足球、篮球、户外几个板块都单独拎出来了，不是那种大而全却找不到重点的样式。后来我试着用了几次，果然如此。特别是赛事预告和结果整理，排版整齐，不用翻来翻去找。
+        </p>
+
+        <div class="highlight-box">
+            <p class="quote">📌 引用朋友的原话：“比那些App清爽，网页打开就行，不用注册也看不到什么广告。” —— 某体育编辑，2025</p>
+            <p style="font-size:0.95rem; margin-top:0.2rem;">当然，每个人使用习惯不同，体验也可能有差异。但至少到目前为止，它给我的感觉是务实、直接。</p>
+        </div>
+
+        <p>
+            除了内容本身，我更在意一个站点是否值得日常信赖。这里说的“信赖”不是指什么保证，而是信息呈现是否干净、链接是否有效、更新频率是否正常。用了几个月<strong>开云</strong>，没遇到过死链或者过期数据，这一点在如今的网站上其实挺难得。
+        </p>
+
+        <h2 style="font-size: 1.3rem; font-weight: 500; margin: 1.6rem 0 0.6rem;">▎几个常用场景</h2>
+        <p>
+            晚上想看看周末有哪些比赛，直接打开<strong>开云</strong>扫一眼列表；写东西需要查某个联赛的近期比分，分类点进去，三两下就能找到。有时候纯粹是随便逛逛，看看户外装备的资讯，也算放松。
+        </p>
+
+        <div class="faq-mini">
+            <div class="faq-item">
+                <strong>❓ 内容会不会很杂？</strong>
+                <span>个人觉得分类清晰，侧重体育和运动生活方式，不堆砌无用信息。</span>
+            </div>
+            <div class="faq-item">
+                <strong>❓ 移动端体验怎么样？</strong>
+                <span>适配做得不错，手机浏览器直接打开，排版跟电脑上一样规整，没有缩放问题。</span>
+            </div>
+            <div class="faq-item">
+                <strong>❓ 有没有多余注册流程？</strong>
+                <span>直接浏览就好，目前没有强制登录或关注，省心。</span>
+            </div>
+        </div>
+
+        <hr>
+
+        <p style="margin-top: 0.2rem;">
+            如果你也在找一个信息干净、内容偏体育和户外生活的站点，或许可以试试<a href="https://www.yun-kaisports.com.cn" class="inline-link">开云</a>。不需要承诺什么，自己看几眼，合适就留着用。
+        </p>
+
+        <p style="margin-bottom: 2rem;">
+            最后补一句：没有任何一个网站是完美的，但<strong>开云</strong>至少做到了“不添乱”。在信息过载的年代，这本身就是一种诚意。
+        </p>
+
+        <div style="text-align: right; margin-bottom: 0.2rem;">
+            <a href="https://www.yun-kaisports.com.cn" class="button-link">开云</a>
+        </div>
+
+        <div class="footer-note">
+            <span>📄 本篇随记仅代表个人使用感受 · 信息核实请以站点实际页面为准</span><br>
+            <span style="opacity:0.7;">如果你有其他好用的站点，也欢迎交流分享。</span>
+        </div>
+    </div>
+</body>
+</html>
